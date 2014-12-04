@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+      <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='
+      stylesheet' type='text/css'>
+
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+      <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+	
+		<title>Houck Law Firm, P.S.</title>
+		
+		<!-- external CSS link -->
+	
+    <script src="js/jquery-1.9.1.min.js"></script>
+		<link rel="stylesheet" href="css/Final-Project.css">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+<body>
+<div class="container">
+	<div class="main">
+				<nav class="navbar navbar-inverse">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="#">Houck Law Firm, P.S.</a>
+          </div>
+    				<ul class="nav navbar-nav">
+
+             <script>$(window).scroll(function(){
+        if ($('body').scrollTop() > 150) {
+          $('nav').css('background-color', 'rgba(29,33,53,0.9)');
+          $('nav').css('border', '4px solid #5acdc4');
+          $('nav a').css('color', '#fff');
+            }  else {
+                $('nav').css('background-color', 'rgba(0,0,0,0)');
+                $('nav').css('border', 'none');
+                $('nav').css('color', 'black');
+              }
+          });</script>
+   
+       	 				<li class="active"><a href="#">Home</a></li>
+        				<li><a href="#aboutUs">About Us</a></li>
+        				<li><a href="#services">Services</a></li> 
+       					<li><a href="#ourWorks">Our Works</a></li> 
+       					<li><a href="#careers">Careers</a></li>
+       					<li><a class="contact-link" href="#contact">Contact</a></li>
+     	 			</ul>
+            <div class="clear"></div>
+         </nav>
+         
+         <div id="slider1_container" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+            </div>
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                <div class="picture-caption">
+                    <img u="image" width="100%" src="img/seattle-skyline.jpg" />
+                    <h2>Seattle</h2>
+                </div>
+                <div class="picture-caption-longest">
+                    <img u="image" src="img/san-francisco-skyline.jpg" />
+                    <h2>San Francisco</h2>
+                </div>
+                <div class="picture-caption">
+                    <img u="image" src="img/chicago-skyline.jpg" />
+                    <h2>Chicago</h2>
+                </div>
+                <div class="picture-caption">
+                    <img u="image" src="img/Los-Angeles-Skyline.jpg" />
+                    <h2>Los Angeles</h2>
+                </div>
+                  <div class="picture-caption-longest2">
+                    <img u="image" src="img/District-of-Columbia.jpg" />
+                    <h2>District of Columbia</h2>
+                </div>
+            </div>
+
+            <!-- Bullet Navigator Skin Begin -->
+            <style>
+                /* jssor slider bullet navigator skin 21 css */
+                /*
+                .jssorb21 div           (normal)
+                .jssorb21 div:hover     (normal mouseover)
+                .jssorb21 .av           (active)
+                .jssorb21 .av:hover     (active mouseover)
+                .jssorb21 .dn           (mousedown)
+                */
+                .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                    background: url(img/b21.png) no-repeat;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+
+                .jssorb21 div {
+                    background-position: -5px -5px;
+                }
+
+                    .jssorb21 div:hover, .jssorb21 .av:hover {
+                        background-position: -35px -5px;
+                    }
+
+                .jssorb21 .av {
+                    background-position: -65px -5px;
+                }
+
+                .jssorb21 .dn, .jssorb21 .dn:hover {
+                    background-position: -95px -5px;
+                }
+            </style>
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+            </div>
+            <!-- Bullet Navigator Skin End -->
+            <!-- Arrow Navigator Skin Begin -->
+            <style>
+                /* jssor slider arrow navigator skin 21 css */
+                /*
+                .jssora21l              (normal)
+                .jssora21r              (normal)
+                .jssora21l:hover        (normal mouseover)
+                .jssora21r:hover        (normal mouseover)
+                .jssora21ldn            (mousedown)
+                .jssora21rdn            (mousedown)
+                */
+                .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
+                    position: absolute;
+                    cursor: pointer;
+                    display: block;
+                    background: url(img/a21.png) center center no-repeat;
+                    overflow: hidden;
+                }
+
+                .jssora21l {
+                    background-position: -3px -33px;
+                }
+
+                .jssora21r {
+                    background-position: -63px -33px;
+                }
+
+                .jssora21l:hover {
+                    background-position: -123px -33px;
+                }
+
+                .jssora21r:hover {
+                    background-position: -183px -33px;
+                }
+
+                .jssora21ldn {
+                    background-position: -243px -33px;
+                }
+
+                .jssora21rdn {
+                    background-position: -303px -33px;
+                }
+            </style>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+            </span>
+            <!-- Arrow Navigator Skin End -->
+            <a style="display: none" href="http://www.jssor.com">bootstrap carousel</a>
+        </div>
+    <!-- Jssor Slider End -->
+
+      <!-- <div class="carousel colorDissolve">
+          <div class="carouselSeattle">
+            <img src="img/seattle-skyline.jpg">
+              <span>Seattle</span>
+          </div>
+
+          <div class="carouselSanfran">
+            <img src="img/san-francisco-skyline.jpg">
+              <span>San Francisco</span>
+          </div>
+
+          <div class="carouselChicago">
+            <img src="img/chicago-skyline.jpg">
+              <span>Chicago</span>
+          </div>
+
+          <div class="carouselLosAngeles">
+            <img src="img/Los-Angeles-Skyline.jpg">
+              <span>Los Angeles</span>  
+          </div>
+      </div> -->
+
+ <!--Pages-->
+ 
+<div class="pages">  
+  <div class="aboutUs" id="aboutUs">
+    <h1>About Us</h1>  
+    <img src="img/Gavel.png"style="width:2.5em; height:1.5em;">
+    <p>Located in Issaquah, Washington since 1996, we specialize in:</p>
+      <ul>
+        <li>Automobile Injuries</li>
+        <li>Medical Malpractice</li>
+        <li>Work Injuries</li>
+        <li>Wage Disputes</li>
+        <li>Wrongful Termination</li>
+        <li>Consumer Fraud</li>
+        <li>Industrial Accidents</li>
+        <li>Fraud</li>
+        <li>Employment Disputes</li>
+        <li>Whistle-blowers</li>
+      </ul>
+     </div> 
+  <div class="services" id="services">
+      <h1>Services</h1>
+        <div class="subheader">
+          <h2 id="experience">Experience</h2>
+          <p>We have over 35 years of successful representation of our clients. We pride ourselves in helping accident victims, employees, and consumers in their pursuit of justice. We're simply experience you can trust.</p>
+        </div>
+        <div class="subheader">
+          <h2 id="knowledge">Knowledge</h2>
+          <p>We serve a wide range of clientele, and every client relationship is valued greatly. Each engagement benefits from the depth and breadth of our expertise.</p>
+        </div>
+        <div class="subheader">
+          <h2 id="diversity">Diversity</h2>
+          <p>We associate with counsel in any state and chiefly handle lawsuits in Washington, Illinois, District of Columbia, and California. With ever changing laws, you need someone on your side who knows how to accomplish the unthinkable.</p>
+        </div>
+  </div>
+    <div id="ourWorks">
+      <h2>Our Works</h2>
+      <p>At Houck Law Firm, we've handled hundreds of cases involving individuals against a larger corporation. Below are just a few examples of work that we've done.</p>
+        <div id="ATT"><img src="img/ATT-Logo.jpg"/></div>
+        <div id="P"><img src="img/progressive_logo.jpg"/></div>
+        <div id="S"><img src="img/safeco_logo.jpg"></div>
+    </div>
+</div>
+
+
+
+<div class="careers" id="careers">
+  <h1>Legal Administrator</h1>
+  <h2>Summary of Responsibilities</h2>
+    <p>Manages business functions as well as the overall operations of a law office. Reports to the managing partner, management committee or Chairman of the Board, and participates in management meetings. In addition to general responsibility for financial planning and controls, personnel administration, and systems and physical facilities, the legal administrator identifies and plans for the changing needs of the organization, shares responsibility with the appropriate partners or owners for strategic planning, practice management and marketing, and contributes to cost-effective management throughout the organization.</p>
+   
+  <h2>Job Requirements</h2> 
+<div>  
+  <div id="knowledge2">
+    <h3>Knowledge</h3>
+      <p>Has knowledge of legal or other professional service organizations, and has experience managing business operations such as human resources, technology, facilities, finance and marketing.</p>
+  </div>
+  <div id="knowledge2">
+    <h3>Skills & Abilities</h3>
+      <p>Can identify and analyze complex issues and problems in management areas, and recommend and implement solutions. Can manage office functions economically and efficiently, organize work, establish priorities and maintain good interpersonal relations and communications with lawyers and support staff. Displays excellent supervisory and leadership skills. Demonstrates willingness and ability to delegate.</p>
+  </div>
+  <div id="knowledge2">
+    <h3>Education</h3>
+      <p>Graduation from a recognized college or university with major course work in business administration or management, finance, human resources, technology or marketing, or comparable work experience. Professional certifications a plus, including Certified Legal Manager designation. </p>
+  </div>
+</div> 
+</div>
+
+
+
+</div>
+</div>
+
+<div id="contact">
+  <div id="close">Close</div>
+
+  <div id="contact_header">Contact</div>
+  <p class="success">Thank you! Your message has been sent.</p>
+
+  <form action="send.php" method="post" name="contactForm" id="contactForm">
+  <p><input name="name" id="name" type="text" size="30" value="Your Name" /></p>
+  <p><input name="email" id="email" type="text" size="30" value="Your Email Address" /></p>
+  <p><textarea name="comment" id="comment" rows="5" cols="40">Enter your comment or query...</textarea></p>
+  <p><input type="submit" id="submit" name="submit" value="Send" /></p>
+ </form>
+</div>
+
+<div id="mask"></div>
+
+<!--end contact form-->
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- use jssor.js + jssor.slider.js instead for development -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script type="text/javascript" src="js/jquerytransition.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,                    //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0,                           //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false,                                  //Scales bullets navigator or not while slider scale
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            // load the modal window
+            $('.contact-link').click(function(){
+
+              // scroll to top
+              $('html, body').animate({scrollTop:0}, 'fast');
+
+              // before showing the modal window, reset the form incase of previous use.
+              $('.success, .error').hide();
+              $('form#contactForm').show();
+
+              // Reset all the default values in the form fields
+              $('#name').val('Your name');
+              $('#email').val('Your email address');
+              $('#comment').val('Enter your comment or query...');
+
+              //show the mask and contact divs
+              //$('#mask').show().fadeTo('', 0.7);
+              $('div#contact').fadeIn().css('position', 'fixed');
+
+              // stop the modal link from doing its default action
+              return false;
+            });
+
+            // close the modal window is close div or mask div are clicked.
+              $('div#close, div#mask').click(function() {
+                $('div#contact, div#mask').stop().fadeOut('slow');
+
+              });
+
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+
+</body>
+
+
+<div id="main"> 
+  <header> 
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="mobile-icon" class="desktop-hidden">
+      <span></span>
+
+  <span></span>
+      <span></span>
+    </div>
+  </header>
+  
+    
+  
+  
+    <div id="marquee"> </div>
+
+    <div class="four-col"></div>
+    <div class="four-col"></div>
+    <div class="four-col smartphone-hidden"></div>
+    <div class="four-col"></div>
+  
+  <footer> 
+    
+    <div></div>
+    <div></div>
+    <div></div>
+
+  </footer>
+
+</div>
+
+<script>
+  
+</script>
